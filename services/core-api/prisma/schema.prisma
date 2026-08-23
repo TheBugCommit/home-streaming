@@ -1,0 +1,348 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  admin
+  viewer
+}
+
+enum MediaType {
+  movie
+  episode
+  track
+}
+
+enum MediaStatus {
+  pending
+  downloading
+  downloaded
+  transcoding
+  transcoded
+  ready
+  failed
+}
+
+enum ContentType {
+  movie
+  tv
+  music
+}
+
+enum TorrentStatus {
+  queued
+  downloading
+  completed
+  error
+}
+
+enum TranscodeStatus {
+  queued
+  transcoding
+  completed
+  failed
+  skipped
+}
+
+enum MetadataProvider {
+  tmdb
+  musicbrainz
+}
+
+enum SeriesStatus {
+  ongoing
+  ended
+}
+
+model User {
+  id              String         @id @default(uuid())
+  email           String         @unique
+  passwordHash    String         @map("password_hash")
+  displayName     String?        @map("display_name")
+  role            UserRole       @default(viewer)
+  isActive        Boolean        @default(true) @map("is_active")
+  createdAt       DateTime       @default(now()) @map("created_at")
+  updatedAt       DateTime       @updatedAt @map("updated_at")
+  refreshTokens   RefreshToken[]
+  apiKeys         ApiKey[]
+  submittedTorrents Torrent[]
+
+  @@map("users")
+}
+
+model RefreshToken {
+  id         String    @id @default(uuid())
+  userId     String    @map("user_id")
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash  String    @map("token_hash")
+  expiresAt  DateTime  @map("expires_at")
+  revokedAt  DateTime? @map("revoked_at")
+  createdAt  DateTime  @default(now()) @map("created_at")
+
+  @@index([userId])
+  @@map("refresh_tokens")
+}
+
+model ApiKey {
+  id            String    @id @default(uuid())
+  ownerUserId   String    @map("owner_user_id")
+  owner         User      @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+  name          String
+  keyPrefix     String    @map("key_prefix")
+  keyHash       String    @map("key_hash")
+  scopes        Json      @default("[]")
+  expiresAt     DateTime? @map("expires_at")
+  lastUsedAt    DateTime? @map("last_used_at")
+  revokedAt     DateTime? @map("revoked_at")
+  createdAt     DateTime  @default(now()) @map("created_at")
+
+  @@unique([keyPrefix])
+  @@index([ownerUserId])
+  @@map("api_keys")
+}
+
+model MediaItem {
+  id              String       @id @default(uuid())
+  type            MediaType
+  title           String
+  sortTitle       String?      @map("sort_title")
+  releaseYear     Int?         @map("release_year")
+  durationSeconds Int?         @map("duration_seconds")
+  filePath        String       @map("file_path")
+  fileSizeBytes   BigInt?      @map("file_size_bytes")
+  containerFormat String?      @map("container_format")
+  videoCodec      String?      @map("video_codec")
+  audioCodec      String?      @map("audio_codec")
+  resolution      String?
+  status          MediaStatus  @default(pending)
+  sourceTorrentId String?      @map("source_torrent_id")
+  sourceTorrent   Torrent?     @relation(fields: [sourceTorrentId], references: [id])
+  metadata        Json?
+  createdAt       DateTime     @default(now()) @map("created_at")
+  updatedAt       DateTime     @updatedAt @map("updated_at")
+
+  movieDetails    MovieDetails?
+  episodeDetails  EpisodeDetails?
+  trackDetails    TrackDetails?
+  genres          MediaItemGenre[]
+  categories      MediaItemCategory[]
+  transcodeJobs   TranscodeJob[]
+
+  @@index([type])
+  @@index([status])
+  @@map("media_items")
+}
+
+model MovieDetails {
+  mediaItemId      String    @id @map("media_item_id")
+  mediaItem        MediaItem @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  tmdbId           Int?      @map("tmdb_id")
+  imdbId           String?   @map("imdb_id")
+  overview         String?
+  runtimeMinutes   Int?      @map("runtime_minutes")
+  originalLanguage String?   @map("original_language")
+  posterPath       String?   @map("poster_path")
+  backdropPath     String?   @map("backdrop_path")
+
+  @@map("movie_details")
+}
+
+model Series {
+  id            String       @id @default(uuid())
+  tmdbId        Int?         @unique @map("tmdb_id")
+  title         String
+  overview      String?
+  firstAirDate  DateTime?    @map("first_air_date")
+  posterPath    String?      @map("poster_path")
+  backdropPath  String?      @map("backdrop_path")
+  status        SeriesStatus?
+  createdAt     DateTime     @default(now()) @map("created_at")
+  updatedAt     DateTime     @updatedAt @map("updated_at")
+
+  seasons       Season[]
+  episodes      EpisodeDetails[]
+  genres        SeriesGenre[]
+
+  @@map("series")
+}
+
+model Season {
+  id           String   @id @default(uuid())
+  seriesId     String   @map("series_id")
+  series       Series   @relation(fields: [seriesId], references: [id], onDelete: Cascade)
+  seasonNumber Int      @map("season_number")
+  tmdbId       Int?     @map("tmdb_id")
+  overview     String?
+  posterPath   String?  @map("poster_path")
+
+  episodes     EpisodeDetails[]
+
+  @@unique([seriesId, seasonNumber])
+  @@map("seasons")
+}
+
+model EpisodeDetails {
+  mediaItemId   String    @id @map("media_item_id")
+  mediaItem     MediaItem @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  seriesId      String?   @map("series_id")
+  series        Series?   @relation(fields: [seriesId], references: [id])
+  seasonId      String?   @map("season_id")
+  season        Season?   @relation(fields: [seasonId], references: [id])
+  episodeNumber Int?      @map("episode_number")
+  imdbId        String?   @map("imdb_id")
+  overview      String?
+  airDate       DateTime? @map("air_date")
+
+  @@index([seriesId])
+  @@index([seasonId])
+  @@map("episode_details")
+}
+
+model TrackDetails {
+  mediaItemId              String    @id @map("media_item_id")
+  mediaItem                MediaItem @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  musicbrainzRecordingId   String?   @map("musicbrainz_recording_id")
+  musicbrainzReleaseId     String?   @map("musicbrainz_release_id")
+  artistName               String?   @map("artist_name")
+  albumName                String?   @map("album_name")
+  trackNumber              Int?      @map("track_number")
+  discNumber               Int?      @map("disc_number")
+  coverArtUrl              String?   @map("cover_art_url")
+
+  @@map("track_details")
+}
+
+model Genre {
+  id      String @id @default(uuid())
+  name    String @unique
+
+  mediaItems MediaItemGenre[]
+  series     SeriesGenre[]
+
+  @@map("genres")
+}
+
+model MediaItemGenre {
+  mediaItemId String    @map("media_item_id")
+  mediaItem   MediaItem @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  genreId     String    @map("genre_id")
+  genre       Genre     @relation(fields: [genreId], references: [id], onDelete: Cascade)
+
+  @@id([mediaItemId, genreId])
+  @@map("media_item_genres")
+}
+
+model SeriesGenre {
+  seriesId String @map("series_id")
+  series   Series @relation(fields: [seriesId], references: [id], onDelete: Cascade)
+  genreId  String @map("genre_id")
+  genre    Genre  @relation(fields: [genreId], references: [id], onDelete: Cascade)
+
+  @@id([seriesId, genreId])
+  @@map("series_genres")
+}
+
+model Category {
+  id   String @id @default(uuid())
+  name String @unique
+
+  mediaItems MediaItemCategory[]
+
+  @@map("categories")
+}
+
+model MediaItemCategory {
+  mediaItemId String    @map("media_item_id")
+  mediaItem   MediaItem @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  categoryId  String    @map("category_id")
+  category    Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([mediaItemId, categoryId])
+  @@map("media_item_categories")
+}
+
+model Torrent {
+  id                       String          @id @default(uuid())
+  contentType              ContentType     @map("content_type")
+  categoryLabel            String          @map("category_label")
+  qbittorrentHash          String?         @unique @map("qbittorrent_hash")
+  originalTorrentFilename  String          @map("original_torrent_filename")
+  savePath                 String          @map("save_path")
+  status                   TorrentStatus   @default(queued)
+  progressPercent          Float           @default(0) @map("progress_percent")
+  submittedByUserId        String          @map("submitted_by_user_id")
+  submittedBy              User            @relation(fields: [submittedByUserId], references: [id])
+  addedAt                  DateTime        @default(now()) @map("added_at")
+  completedAt              DateTime?       @map("completed_at")
+  errorMessage             String?         @map("error_message")
+
+  mediaItems               MediaItem[]
+  statusHistory            DownloadStatusHistory[]
+
+  @@map("torrents")
+}
+
+model DownloadStatusHistory {
+  id         String        @id @default(uuid())
+  torrentId  String        @map("torrent_id")
+  torrent    Torrent       @relation(fields: [torrentId], references: [id], onDelete: Cascade)
+  status     TorrentStatus
+  occurredAt DateTime      @default(now()) @map("occurred_at")
+  detail     Json?
+
+  @@index([torrentId])
+  @@map("download_status_history")
+}
+
+model TranscodeJob {
+  id               String          @id @default(uuid())
+  mediaItemId      String          @map("media_item_id")
+  mediaItem        MediaItem       @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  sourcePath       String          @map("source_path")
+  outputPath       String?         @map("output_path")
+  status           TranscodeStatus @default(queued)
+  startedAt        DateTime?       @map("started_at")
+  completedAt      DateTime?       @map("completed_at")
+  sizeBeforeBytes  BigInt?         @map("size_before_bytes")
+  sizeAfterBytes   BigInt?         @map("size_after_bytes")
+  videoCodecBefore String?         @map("video_codec_before")
+  videoCodecAfter  String?         @map("video_codec_after")
+  errorMessage     String?         @map("error_message")
+  createdAt        DateTime        @default(now()) @map("created_at")
+
+  statusHistory    TranscodeStatusHistory[]
+
+  @@index([mediaItemId])
+  @@map("transcode_jobs")
+}
+
+model TranscodeStatusHistory {
+  id             String          @id @default(uuid())
+  transcodeJobId String          @map("transcode_job_id")
+  transcodeJob   TranscodeJob    @relation(fields: [transcodeJobId], references: [id], onDelete: Cascade)
+  status         TranscodeStatus
+  occurredAt     DateTime        @default(now()) @map("occurred_at")
+  detail         Json?
+
+  @@index([transcodeJobId])
+  @@map("transcode_status_history")
+}
+
+model MetadataEnrichmentJob {
+  id                 String           @id @default(uuid())
+  mediaItemId        String           @map("media_item_id")
+  provider           MetadataProvider
+  status             String
+  rawResponse        Json?            @map("raw_response")
+  matchedExternalId  String?          @map("matched_external_id")
+  confidenceScore    Float?           @map("confidence_score")
+  createdAt          DateTime         @default(now()) @map("created_at")
+
+  @@index([mediaItemId])
+  @@map("metadata_enrichment_jobs")
+}

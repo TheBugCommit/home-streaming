@@ -1,0 +1,16 @@
+# LOCAL-DEV-ONLY overlay. Do NOT deploy this file to the dedicated server — it has no GPU.
+#
+# This overlay exists purely to speed up iteration on this development machine, which has an
+# NVIDIA RTX 2050 and the `nvidia` container runtime already registered in /etc/docker/daemon.json.
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.gpu.local.yml up -d
+#
+# It swaps Tdarr's transcode Flow to use NVENC instead of libx264. The Flow itself is configured
+# in Tdarr's web UI (see tdarr/flows/README.md) and must be authored to prefer hardware encoding
+# when GPU is present — this file only grants the container access to the GPU.
+services:
+  tdarr:
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all

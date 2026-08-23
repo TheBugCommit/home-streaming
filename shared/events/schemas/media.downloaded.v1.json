@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://home-streaming/events/media.downloaded.v1.json",
+  "title": "media.downloaded",
+  "description": "Published by torrent-worker when qBittorrent's on-completion hook fires for a torrent. Consumed by core-api.",
+  "type": "object",
+  "required": ["torrentHash", "requestId", "contentType", "category", "completedAt", "files"],
+  "properties": {
+    "torrentHash": { "type": "string" },
+    "requestId": { "type": "string", "format": "uuid", "description": "Correlates back to the originating torrent.enqueue request when known; null for torrents added outside our own flow." },
+    "contentType": { "type": "string", "enum": ["movie", "tv", "music"] },
+    "category": { "type": "string", "enum": ["movies", "tv", "music"] },
+    "completedAt": { "type": "string", "format": "date-time" },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["relativePath", "absolutePath", "sizeBytes", "fileExtension"],
+        "properties": {
+          "relativePath": { "type": "string", "description": "Path relative to /data/library/<category>" },
+          "absolutePath": { "type": "string", "description": "Absolute path inside the container, e.g. /data/library/movies/..." },
+          "sizeBytes": { "type": "integer", "minimum": 0 },
+          "fileExtension": { "type": "string" }
+        }
+      }
+    }
+  }
+}

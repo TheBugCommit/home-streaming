@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://home-streaming/events/media.transcoded.v1.json",
+  "title": "media.transcoded",
+  "description": "Published by transcode-worker on terminal success. Consumed by core-api (persists result, triggers Jellyfin refresh) and metadata-service (kicks off enrichment).",
+  "type": "object",
+  "required": ["mediaItemId", "transcodeJobId", "contentType", "outputPath", "status", "occurredAt"],
+  "properties": {
+    "mediaItemId": { "type": "string", "format": "uuid" },
+    "transcodeJobId": { "type": "string", "format": "uuid" },
+    "contentType": { "type": "string", "enum": ["movie", "episode", "track"] },
+    "outputPath": { "type": "string", "description": "Absolute path under /data/streamable/<category>." },
+    "status": { "type": "string", "enum": ["completed", "skipped"] },
+    "sizeBeforeBytes": { "type": "integer", "minimum": 0 },
+    "sizeAfterBytes": { "type": "integer", "minimum": 0 },
+    "videoCodec": { "type": ["string", "null"] },
+    "audioCodec": { "type": ["string", "null"] },
+    "containerFormat": { "type": ["string", "null"] },
+    "occurredAt": { "type": "string", "format": "date-time" }
+  }
+}
