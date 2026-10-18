@@ -1,4 +1,4 @@
-module home-streaming
+module home-streaming-backend
 
 go 1.27
 

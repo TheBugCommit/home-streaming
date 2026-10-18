@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"home-streaming/backend/internal/app"
-	"home-streaming/backend/internal/config"
+	"home-streaming-backend/internal/app"
+	"home-streaming-backend/internal/config"
 	"log/slog"
 	"os"
 	"os/signal"
