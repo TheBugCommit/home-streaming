@@ -2,15 +2,14 @@ package main
 
 import (
 	"context"
+	"home-streaming/backend/internal/app"
+	"home-streaming/backend/internal/config"
 	"log/slog"
 	"os"
 	"os/signal"
 	"syscall"
 
 	"github.com/joho/godotenv"
-
-	"home-streaming/internal/app"
-	"home-streaming/internal/config"
 )
 
 func main() {

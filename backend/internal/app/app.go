@@ -2,10 +2,9 @@ package app
 
 import (
 	"context"
+	"home-streaming/backend/internal/config"
+	"home-streaming/backend/internal/qbittorrent"
 	"log/slog"
-
-	"home-streaming/internal/config"
-	"home-streaming/internal/qbittorrent"
 )
 
 // App is the composition root: the one place that knows how every component is built and wired

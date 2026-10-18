@@ -1,0 +1,455 @@
+(N) 2026-10-10T21:25:41 - qBittorrent v5.2.3 started. Process ID: 153
+(N) 2026-10-10T21:25:41 - Using config directory: /config/qBittorrent
+(N) 2026-10-10T21:25:41 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-10-10T21:25:41 - Peer ID: "-qB5230-"
+(I) 2026-10-10T21:25:41 - HTTP User-Agent: "qBittorrent/5.2.3"
+(I) 2026-10-10T21:25:41 - Distributed Hash Table (DHT) support: ON
+(I) 2026-10-10T21:25:41 - Local Peer Discovery support: ON
+(I) 2026-10-10T21:25:41 - Peer Exchange (PeX) support: ON
+(I) 2026-10-10T21:25:41 - Anonymous mode: OFF
+(I) 2026-10-10T21:25:41 - Encryption support: ON
+(I) 2026-10-10T21:25:41 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-10-10T21:25:41 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-10-10T21:25:41 - Successfully listening on IP. IP: "172.23.0.3". Port: "TCP/6881"
+(I) 2026-10-10T21:25:41 - Successfully listening on IP. IP: "172.23.0.3". Port: "UTP/6881"
+(I) 2026-10-10T21:25:41 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-10-10T21:25:41 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(W) 2026-10-10T21:25:41 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2026-10-10T21:25:41 - Using built-in WebUI.
+(W) 2026-10-10T21:25:41 - Couldn't load WebUI translation for selected locale (C).
+(N) 2026-10-10T21:25:41 - WebUI: Now listening on IP: *, port: 8080
+(I) 2026-10-10T21:25:41 - Detected external IP. IP: "185.58.175.239"
+(I) 2026-10-10T21:25:42 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Oct 1 03:36:12 2026.
+(I) 2026-10-10T21:25:42 - Successfully updated IP geolocation database.
+(W) 2026-10-10T21:31:34 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.23.0.1, username: ADMIN
+(W) 2026-10-10T21:31:39 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.23.0.1, username: ADMIN
+(W) 2026-10-10T21:32:05 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:172.23.0.1, username: admin
+(W) 2026-10-10T21:32:07 - WebAPI login failure. Reason: invalid credentials, attempt count: 4, IP: ::ffff:172.23.0.1, username: admin
+(N) 2026-10-10T21:34:10 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-10T21:38:26 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-10T21:38:41 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-10T21:47:53 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-10T21:53:11 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-10T22:02:23 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-10-10T22:03:47 - qBittorrent termination initiated
+(N) 2026-10-10T22:03:47 - Saving resume data completed.
+(N) 2026-10-10T22:03:47 - BitTorrent session successfully finished.
+(N) 2026-10-10T22:03:47 - qBittorrent is now ready to exit
+(N) 2026-10-12T17:11:33 - qBittorrent v5.2.3 started. Process ID: 152
+(N) 2026-10-12T17:11:33 - Using config directory: /config/qBittorrent
+(N) 2026-10-12T17:11:33 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-10-12T17:11:33 - Peer ID: "-qB5230-"
+(I) 2026-10-12T17:11:33 - HTTP User-Agent: "qBittorrent/5.2.3"
+(I) 2026-10-12T17:11:33 - Distributed Hash Table (DHT) support: ON
+(I) 2026-10-12T17:11:33 - Local Peer Discovery support: ON
+(I) 2026-10-12T17:11:33 - Peer Exchange (PeX) support: ON
+(I) 2026-10-12T17:11:33 - Anonymous mode: OFF
+(I) 2026-10-12T17:11:33 - Encryption support: ON
+(I) 2026-10-12T17:11:33 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-10-12T17:11:33 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-10-12T17:11:33 - Successfully listening on IP. IP: "172.23.0.4". Port: "TCP/6881"
+(I) 2026-10-12T17:11:33 - Successfully listening on IP. IP: "172.23.0.4". Port: "UTP/6881"
+(I) 2026-10-12T17:11:33 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-10-12T17:11:33 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(I) 2026-10-12T17:11:33 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Oct 1 03:36:12 2026.
+(N) 2026-10-12T17:11:33 - Using built-in WebUI.
+(N) 2026-10-12T17:11:33 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-10-12T17:11:33 - WebUI: Now listening on IP: *, port: 8080
+(I) 2026-10-12T17:11:33 - Detected external IP. IP: "185.58.175.239"
+(W) 2026-10-12T17:11:49 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.23.0.1, username: admin
+(N) 2026-10-12T17:15:09 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T17:15:17 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T17:41:59 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T17:42:52 - Added new torrent. Torrent: "Big Buck Bunny"
+(W) 2026-10-12T17:42:54 - File error alert. Torrent: "Big Buck Bunny". File: "/downloads/Big Buck Bunny/Big Buck Bunny.mp4". Reason: "Big Buck Bunny file_open (/downloads/Big Buck Bunny/Big Buck Bunny.mp4) error: Permission denied"
+(N) 2026-10-12T17:42:55 - WebAPI login success. IP: ::ffff:172.23.0.1
+(W) 2026-10-12T17:43:33 - File error alert. Torrent: "Big Buck Bunny". File: "/downloads/Big Buck Bunny/Big Buck Bunny.mp4". Reason: "Big Buck Bunny file_open (/downloads/Big Buck Bunny/Big Buck Bunny.mp4) error: Permission denied"
+(W) 2026-10-12T17:43:50 - File error alert. Torrent: "Big Buck Bunny". File: "/downloads/Big Buck Bunny/Big Buck Bunny.mp4". Reason: "Big Buck Bunny file_open (/downloads/Big Buck Bunny/Big Buck Bunny.mp4) error: Permission denied"
+(N) 2026-10-12T17:44:14 - Torrent removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-12T17:44:14 - Torrent content removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-12T17:44:37 - Added new torrent. Torrent: "Sintel"
+(W) 2026-10-12T17:44:39 - File error alert. Torrent: "Sintel". File: "/downloads/Sintel/Sintel.mp4". Reason: "Sintel file_open (/downloads/Sintel/Sintel.mp4) error: Permission denied"
+(N) 2026-10-12T17:45:36 - Torrent removed. Torrent: "Sintel"
+(N) 2026-10-12T17:45:36 - Torrent content removed. Torrent: "Sintel"
+(N) 2026-10-12T17:48:18 - Added new torrent. Torrent: "Sintel"
+(W) 2026-10-12T17:48:20 - File error alert. Torrent: "Sintel". File: "/downloads/Sintel/Sintel.de.srt". Reason: "Sintel file_open (/downloads/Sintel/Sintel.de.srt) error: Permission denied"
+(N) 2026-10-12T17:48:33 - WebUI Set location: moving "Sintel", from "/downloads" to "/data/downloads"
+(N) 2026-10-12T17:48:33 - Enqueued torrent move. Torrent: "Sintel". Source: "/downloads". Destination: "/data/downloads"
+(N) 2026-10-12T17:48:33 - Start moving torrent. Torrent: "Sintel". Destination: "/data/downloads"
+(N) 2026-10-12T17:48:33 - Moved torrent successfully. Torrent: "Sintel". Destination: "/data/downloads"
+(N) 2026-10-12T17:48:47 - Torrent stopped. Torrent: "Sintel"
+(N) 2026-10-12T17:48:48 - Torrent resumed. Torrent: "Sintel"
+(N) 2026-10-12T17:49:00 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T17:49:05 - Torrent download finished. Torrent: "Sintel"
+(N) 2026-10-12T17:49:21 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T17:51:29 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T17:52:36 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T17:52:46 - WebAPI login success. IP: ::ffff:172.23.0.1
+(W) 2026-10-12T17:58:58 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.23.0.1, username: admin
+(W) 2026-10-12T17:58:58 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.23.0.1, username: admin
+(W) 2026-10-12T17:58:58 - WebAPI login failure. Reason: invalid credentials, attempt count: 3, IP: ::ffff:172.23.0.1, username: admin
+(W) 2026-10-12T17:58:58 - WebAPI login failure. Reason: invalid credentials, attempt count: 4, IP: ::ffff:172.23.0.1, username: admin
+(W) 2026-10-12T17:58:58 - WebAPI login failure. Reason: invalid credentials, attempt count: 5, IP: ::ffff:172.23.0.1, username: admin
+(W) 2026-10-12T17:58:58 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: admin
+(W) 2026-10-12T17:58:58 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: admin
+(W) 2026-10-12T17:58:58 - WebAPI login failure. Reason: IP has been banned, IP: ::ffff:172.23.0.1, username: admin
+(N) 2026-10-12T18:02:46 - qBittorrent termination initiated
+(N) 2026-10-12T18:02:46 - Saving resume data completed.
+(N) 2026-10-12T18:02:48 - BitTorrent session successfully finished.
+(N) 2026-10-12T18:02:48 - qBittorrent is now ready to exit
+(N) 2026-10-12T18:02:52 - qBittorrent v5.2.3 started. Process ID: 149
+(N) 2026-10-12T18:02:52 - Using config directory: /config/qBittorrent
+(N) 2026-10-12T18:02:52 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-10-12T18:02:53 - Peer ID: "-qB5230-"
+(I) 2026-10-12T18:02:53 - HTTP User-Agent: "qBittorrent/5.2.3"
+(I) 2026-10-12T18:02:53 - Distributed Hash Table (DHT) support: ON
+(I) 2026-10-12T18:02:53 - Local Peer Discovery support: ON
+(I) 2026-10-12T18:02:53 - Peer Exchange (PeX) support: ON
+(I) 2026-10-12T18:02:53 - Anonymous mode: OFF
+(I) 2026-10-12T18:02:53 - Encryption support: ON
+(I) 2026-10-12T18:02:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-10-12T18:02:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-10-12T18:02:53 - Successfully listening on IP. IP: "172.23.0.4". Port: "TCP/6881"
+(I) 2026-10-12T18:02:53 - Successfully listening on IP. IP: "172.23.0.4". Port: "UTP/6881"
+(I) 2026-10-12T18:02:53 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-10-12T18:02:53 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(N) 2026-10-12T18:02:53 - Restored torrent. Torrent: "Sintel"
+(I) 2026-10-12T18:02:53 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Oct 1 03:36:12 2026.
+(N) 2026-10-12T18:02:53 - Using built-in WebUI.
+(N) 2026-10-12T18:02:53 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-10-12T18:02:53 - WebUI: Now listening on IP: *, port: 8080
+(I) 2026-10-12T18:02:53 - Detected external IP. IP: "185.58.175.239"
+(N) 2026-10-12T18:03:47 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T18:27:04 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T18:29:18 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T18:29:31 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T18:30:02 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T18:31:12 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T18:32:11 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T18:33:12 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T18:54:51 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-12T18:58:20 - qBittorrent termination initiated
+(N) 2026-10-12T18:58:20 - Saving resume data completed.
+(N) 2026-10-12T18:58:22 - BitTorrent session successfully finished.
+(N) 2026-10-12T18:58:22 - qBittorrent is now ready to exit
+(N) 2026-10-13T21:21:09 - qBittorrent v5.2.3 started. Process ID: 150
+(N) 2026-10-13T21:21:09 - Using config directory: /config/qBittorrent
+(N) 2026-10-13T21:21:09 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-10-13T21:21:09 - Peer ID: "-qB5230-"
+(I) 2026-10-13T21:21:09 - HTTP User-Agent: "qBittorrent/5.2.3"
+(I) 2026-10-13T21:21:09 - Distributed Hash Table (DHT) support: ON
+(I) 2026-10-13T21:21:09 - Local Peer Discovery support: ON
+(I) 2026-10-13T21:21:09 - Peer Exchange (PeX) support: ON
+(I) 2026-10-13T21:21:09 - Anonymous mode: OFF
+(I) 2026-10-13T21:21:09 - Encryption support: ON
+(I) 2026-10-13T21:21:09 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-10-13T21:21:09 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-10-13T21:21:09 - Successfully listening on IP. IP: "172.23.0.2". Port: "TCP/6881"
+(I) 2026-10-13T21:21:09 - Successfully listening on IP. IP: "172.23.0.2". Port: "UTP/6881"
+(I) 2026-10-13T21:21:09 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-10-13T21:21:09 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(N) 2026-10-13T21:21:09 - Restored torrent. Torrent: "Sintel"
+(I) 2026-10-13T21:21:09 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Oct 1 03:36:12 2026.
+(N) 2026-10-13T21:21:09 - Using built-in WebUI.
+(N) 2026-10-13T21:21:09 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-10-13T21:21:09 - WebUI: Now listening on IP: *, port: 8080
+(I) 2026-10-13T21:21:09 - Detected external IP. IP: "185.246.68.148"
+(N) 2026-10-13T22:29:55 - qBittorrent termination initiated
+(N) 2026-10-13T22:29:55 - Saving resume data completed.
+(N) 2026-10-13T22:29:57 - BitTorrent session successfully finished.
+(N) 2026-10-13T22:29:57 - qBittorrent is now ready to exit
+(N) 2026-10-15T20:25:52 - qBittorrent v5.2.3 started. Process ID: 149
+(N) 2026-10-15T20:25:52 - Using config directory: /config/qBittorrent
+(N) 2026-10-15T20:25:52 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-10-15T20:25:52 - Peer ID: "-qB5230-"
+(I) 2026-10-15T20:25:52 - HTTP User-Agent: "qBittorrent/5.2.3"
+(I) 2026-10-15T20:25:52 - Distributed Hash Table (DHT) support: ON
+(I) 2026-10-15T20:25:52 - Local Peer Discovery support: ON
+(I) 2026-10-15T20:25:52 - Peer Exchange (PeX) support: ON
+(I) 2026-10-15T20:25:52 - Anonymous mode: OFF
+(I) 2026-10-15T20:25:52 - Encryption support: ON
+(I) 2026-10-15T20:25:52 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-10-15T20:25:52 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-10-15T20:25:52 - Successfully listening on IP. IP: "172.23.0.4". Port: "TCP/6881"
+(I) 2026-10-15T20:25:52 - Successfully listening on IP. IP: "172.23.0.4". Port: "UTP/6881"
+(I) 2026-10-15T20:25:52 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-10-15T20:25:52 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(N) 2026-10-15T20:25:52 - Restored torrent. Torrent: "Sintel"
+(I) 2026-10-15T20:25:52 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Oct 1 03:36:12 2026.
+(N) 2026-10-15T20:25:52 - Using built-in WebUI.
+(N) 2026-10-15T20:25:52 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-10-15T20:25:52 - WebUI: Now listening on IP: *, port: 8080
+(I) 2026-10-15T20:25:52 - Detected external IP. IP: "185.246.68.148"
+(N) 2026-10-15T21:15:11 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:16:23 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:36:15 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:36:21 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:37:08 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:37:32 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:37:32 - Added new torrent. Torrent: "Big Buck Bunny"
+(W) 2026-10-15T21:37:34 - File error alert. Torrent: "Big Buck Bunny". File: "/downloads/Big Buck Bunny/Big Buck Bunny.mp4". Reason: "Big Buck Bunny file_open (/downloads/Big Buck Bunny/Big Buck Bunny.mp4) error: Permission denied"
+(N) 2026-10-15T21:37:56 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:37:56 - Detected an attempt to add a duplicate torrent. Source: magnet:?xt=urn:btih:dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c. Existing torrent: "Big Buck Bunny". Torrent infohash: dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c. Result: Merging of trackers is disabled
+(N) 2026-10-15T21:38:08 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:38:08 - Detected an attempt to add a duplicate torrent. Source: magnet:?xt=urn:btih:dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c&dn=Big+Buck+Bunny&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fbig-buck-bunny.torrent. Existing torrent: "Big Buck Bunny". Torrent infohash: dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c. Result: Merging of trackers is disabled
+(N) 2026-10-15T21:46:35 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:47:24 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:47:24 - Detected an attempt to add a duplicate torrent. Source: magnet:?xt=urn:btih:dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c&dn=Big+Buck+Bunny&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fbig-buck-bunny.torrent. Existing torrent: "Big Buck Bunny". Torrent infohash: dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c. Result: Merging of trackers is disabled
+(W) 2026-10-15T21:47:34 - File error alert. Torrent: "Big Buck Bunny". File: "/downloads/Big Buck Bunny/Big Buck Bunny.mp4". Reason: "Big Buck Bunny file_open (/downloads/Big Buck Bunny/Big Buck Bunny.mp4) error: Permission denied"
+(N) 2026-10-15T21:47:58 - Torrent removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-15T21:47:58 - Torrent content removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-15T21:48:04 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:48:04 - Added new torrent. Torrent: "Big Buck Bunny"
+(W) 2026-10-15T21:48:05 - File error alert. Torrent: "Big Buck Bunny". File: "/downloads/Big Buck Bunny/Big Buck Bunny.mp4". Reason: "Big Buck Bunny file_open (/downloads/Big Buck Bunny/Big Buck Bunny.mp4) error: Permission denied"
+(N) 2026-10-15T21:50:22 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:50:22 - Detected an attempt to add a duplicate torrent. Source: magnet:?xt=urn:btih:dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c&dn=Big+Buck+Bunny&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&ws=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2F&xs=https%3A%2F%2Fwebtorrent.io%2Ftorrents%2Fbig-buck-bunny.torrent. Existing torrent: "Big Buck Bunny". Torrent infohash: dd8255ecdc7ca55fb0bbf81323d87062db1f6d1c. Result: Merging of trackers is disabled
+(N) 2026-10-15T21:50:29 - Torrent removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-15T21:50:29 - Torrent content removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-15T21:50:33 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-15T21:50:33 - Added new torrent. Torrent: "Big Buck Bunny"
+(N) 2026-10-15T21:51:13 - Torrent download finished. Torrent: "Big Buck Bunny"
+(N) 2026-10-15T22:24:59 - qBittorrent termination initiated
+(N) 2026-10-15T22:24:59 - Saving resume data completed.
+(N) 2026-10-15T22:25:01 - BitTorrent session successfully finished.
+(N) 2026-10-15T22:25:01 - qBittorrent is now ready to exit
+(N) 2026-10-17T11:25:32 - qBittorrent v5.2.3 started. Process ID: 149
+(N) 2026-10-17T11:25:32 - Using config directory: /config/qBittorrent
+(N) 2026-10-17T11:25:32 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-10-17T11:25:32 - Peer ID: "-qB5230-"
+(I) 2026-10-17T11:25:32 - HTTP User-Agent: "qBittorrent/5.2.3"
+(I) 2026-10-17T11:25:32 - Distributed Hash Table (DHT) support: ON
+(I) 2026-10-17T11:25:32 - Local Peer Discovery support: ON
+(I) 2026-10-17T11:25:32 - Peer Exchange (PeX) support: ON
+(I) 2026-10-17T11:25:32 - Anonymous mode: OFF
+(I) 2026-10-17T11:25:32 - Encryption support: ON
+(I) 2026-10-17T11:25:32 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-10-17T11:25:32 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-10-17T11:25:32 - Successfully listening on IP. IP: "172.23.0.4". Port: "TCP/6881"
+(I) 2026-10-17T11:25:32 - Successfully listening on IP. IP: "172.23.0.4". Port: "UTP/6881"
+(I) 2026-10-17T11:25:32 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-10-17T11:25:32 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(N) 2026-10-17T11:25:32 - Restored torrent. Torrent: "Big Buck Bunny"
+(N) 2026-10-17T11:25:32 - Restored torrent. Torrent: "Sintel"
+(I) 2026-10-17T11:25:32 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Oct 1 03:36:12 2026.
+(N) 2026-10-17T11:25:32 - Using built-in WebUI.
+(N) 2026-10-17T11:25:32 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-10-17T11:25:32 - WebUI: Now listening on IP: *, port: 8080
+(I) 2026-10-17T11:25:32 - Detected external IP. IP: "185.58.175.239"
+(N) 2026-10-17T19:17:24 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T19:44:02 - Torrent removed. Torrent: "Sintel"
+(N) 2026-10-17T19:44:02 - Torrent content removed. Torrent: "Sintel"
+(N) 2026-10-17T20:16:31 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T20:16:31 - Added new torrent. Torrent: "Sintel"
+(W) 2026-10-17T20:16:32 - File error alert. Torrent: "Sintel". File: "/data/downloads
+--73561acef17bc9ec90d681faca0fbf3be49e468a2e714141dadbeeebcacc--/Sintel/Sintel.mp4". Reason: "Sintel file_open (/data/downloads
+--73561acef17bc9ec90d681faca0fbf3be49e468a2e714141dadbeeebcacc--/Sintel/Sintel.mp4) error: Permission denied"
+(W) 2026-10-17T20:17:34 - File error alert. Torrent: "Sintel". File: "/data/downloads
+--73561acef17bc9ec90d681faca0fbf3be49e468a2e714141dadbeeebcacc--/Sintel/Sintel.mp4". Reason: "Sintel file_open (/data/downloads
+--73561acef17bc9ec90d681faca0fbf3be49e468a2e714141dadbeeebcacc--/Sintel/Sintel.mp4) error: Permission denied"
+(N) 2026-10-17T20:18:17 - Torrent removed. Torrent: "Sintel"
+(N) 2026-10-17T20:18:17 - Torrent content removed. Torrent: "Sintel"
+(N) 2026-10-17T20:18:51 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T20:18:51 - Added new torrent. Torrent: "Sintel"
+(W) 2026-10-17T20:18:52 - File error alert. Torrent: "Sintel". File: "/data/downloads
+--a603267829c3296615418cb226494d7f58d80c206376afb177fdeb9834f9--/Sintel/Sintel.mp4". Reason: "Sintel file_open (/data/downloads
+--a603267829c3296615418cb226494d7f58d80c206376afb177fdeb9834f9--/Sintel/Sintel.mp4) error: Permission denied"
+(N) 2026-10-17T20:19:15 - Torrent removed. Torrent: "Sintel"
+(N) 2026-10-17T20:19:15 - Torrent content removed. Torrent: "Sintel"
+(N) 2026-10-17T20:19:19 - Torrent removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-17T20:19:19 - Torrent content removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-17T20:20:07 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T20:20:07 - Added new torrent. Torrent: "Sintel"
+(W) 2026-10-17T20:20:08 - File error alert. Torrent: "Sintel". File: "/data/downloads
+--f047a04cfbcd46e06d2b68a44983c525b04602d8dedeb78fc29e75009b3d--/Sintel/Sintel.mp4". Reason: "Sintel file_open (/data/downloads
+--f047a04cfbcd46e06d2b68a44983c525b04602d8dedeb78fc29e75009b3d--/Sintel/Sintel.mp4) error: Permission denied"
+(N) 2026-10-17T20:20:26 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T20:20:55 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T20:20:55 - Added new torrent. Torrent: "Big Buck Bunny"
+(W) 2026-10-17T20:20:56 - File error alert. Torrent: "Big Buck Bunny". File: "/data/downloads
+--0b81110bd14e4382259f71bb6a4097848603c068ed4f9b375e2add1f2e3e--/Big Buck Bunny/Big Buck Bunny.mp4". Reason: "Big Buck Bunny file_open (/data/downloads
+--0b81110bd14e4382259f71bb6a4097848603c068ed4f9b375e2add1f2e3e--/Big Buck Bunny/Big Buck Bunny.mp4) error: Permission denied"
+(N) 2026-10-17T20:21:07 - Torrent removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-17T20:21:07 - Torrent removed. Torrent: "Sintel"
+(N) 2026-10-17T20:21:07 - Torrent content removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-17T20:21:07 - Torrent content removed. Torrent: "Sintel"
+(N) 2026-10-17T20:21:14 - Added new torrent. Torrent: "Big Buck Bunny"
+(W) 2026-10-17T20:21:14 - File error alert. Torrent: "Big Buck Bunny". File: "/downloads/Big Buck Bunny/Big Buck Bunny.mp4". Reason: "Big Buck Bunny file_open (/downloads/Big Buck Bunny/Big Buck Bunny.mp4) error: Permission denied"
+(N) 2026-10-17T20:21:26 - Torrent removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-17T20:21:26 - Torrent content removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-17T20:21:45 - Added new torrent. Torrent: "Big Buck Bunny"
+(W) 2026-10-17T20:21:46 - File error alert. Torrent: "Big Buck Bunny". File: "/downloads/Big Buck Bunny/Big Buck Bunny.mp4". Reason: "Big Buck Bunny file_open (/downloads/Big Buck Bunny/Big Buck Bunny.mp4) error: Permission denied"
+(N) 2026-10-17T20:22:10 - Torrent removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-17T20:22:10 - Torrent content removed. Torrent: "Big Buck Bunny"
+(N) 2026-10-17T20:46:59 - Added new torrent. Torrent: "Sintel"
+(W) 2026-10-17T20:47:00 - File error alert. Torrent: "Sintel". File: "/downloads/Sintel/Sintel.mp4". Reason: "Sintel file_open (/downloads/Sintel/Sintel.mp4) error: Permission denied"
+(N) 2026-10-17T20:47:08 - Torrent stopped. Torrent: "Sintel"
+(N) 2026-10-17T20:47:17 - Torrent removed. Torrent: "Sintel"
+(N) 2026-10-17T20:47:17 - Torrent content removed. Torrent: "Sintel"
+(N) 2026-10-17T20:47:36 - Added new torrent. Torrent: "Cosmos Laundromat"
+(W) 2026-10-17T20:47:37 - File error alert. Torrent: "Cosmos Laundromat". File: "/downloads/Cosmos Laundromat/Cosmos Laundromat.mp4". Reason: "Cosmos Laundromat file_open (/downloads/Cosmos Laundromat/Cosmos Laundromat.mp4) error: Permission denied"
+(N) 2026-10-17T20:47:43 - Torrent removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T20:50:32 - Added new torrent. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T20:50:41 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T20:52:32 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T20:52:59 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T20:53:02 - Torrent download finished. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T20:53:53 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T20:53:53 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T20:54:25 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T20:54:25 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T20:58:27 - Torrent removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T20:58:27 - Torrent content removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:00:40 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:00:41 - Added new torrent. Torrent: "Cosmos Laundromat"
+(W) 2026-10-17T21:00:42 - File error alert. Torrent: "Cosmos Laundromat". File: "/data/downloads
+--72d8b2a7f9ac37cee70edeb3754850fc6abd26f449f0203349b1464f4177--/Cosmos Laundromat/Cosmos Laundromat.mp4". Reason: "Cosmos Laundromat file_open (/data/downloads
+--72d8b2a7f9ac37cee70edeb3754850fc6abd26f449f0203349b1464f4177--/Cosmos Laundromat/Cosmos Laundromat.mp4) error: Permission denied"
+(N) 2026-10-17T21:02:28 - Torrent removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:02:28 - Torrent content removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:02:33 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:02:33 - Added new torrent. Torrent: "Cosmos Laundromat"
+(W) 2026-10-17T21:02:35 - File error alert. Torrent: "Cosmos Laundromat". File: "/data/downloads
+--a8eda17ad28df9b1b972d1aa53ef5dad4e1e90f125ed3db6ae17e417db9b--/Cosmos Laundromat/Cosmos Laundromat.mp4". Reason: "Cosmos Laundromat file_open (/data/downloads
+--a8eda17ad28df9b1b972d1aa53ef5dad4e1e90f125ed3db6ae17e417db9b--/Cosmos Laundromat/Cosmos Laundromat.mp4) error: Permission denied"
+(N) 2026-10-17T21:05:57 - Torrent removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:05:57 - Torrent content removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:06:00 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:06:00 - Added new torrent. Torrent: "Cosmos Laundromat"
+(W) 2026-10-17T21:06:01 - File error alert. Torrent: "Cosmos Laundromat". File: "/data/downloads
+--3141e68352d2c61e2cbb753b050b8207586b2e53039c7daf4003af38572c--/Cosmos Laundromat/Cosmos Laundromat.mp4". Reason: "Cosmos Laundromat file_open (/data/downloads
+--3141e68352d2c61e2cbb753b050b8207586b2e53039c7daf4003af38572c--/Cosmos Laundromat/Cosmos Laundromat.mp4) error: Permission denied"
+(W) 2026-10-17T21:06:51 - File error alert. Torrent: "Cosmos Laundromat". File: "/data/downloads
+--3141e68352d2c61e2cbb753b050b8207586b2e53039c7daf4003af38572c--/Cosmos Laundromat/Cosmos Laundromat.mp4". Reason: "Cosmos Laundromat file_open (/data/downloads
+--3141e68352d2c61e2cbb753b050b8207586b2e53039c7daf4003af38572c--/Cosmos Laundromat/Cosmos Laundromat.mp4) error: Permission denied"
+(N) 2026-10-17T21:08:53 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:08:53 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:08:53 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:08:53 - Detected an attempt to add a duplicate torrent. Existing torrent: "Cosmos Laundromat". Torrent infohash: c9e15763f722f23e98a29decdfae341b98d53056. Result: Merging of trackers is disabled
+(W) 2026-10-17T21:08:53 - File error alert. Torrent: "Cosmos Laundromat". File: "/data/downloads
+--3141e68352d2c61e2cbb753b050b8207586b2e53039c7daf4003af38572c--/Cosmos Laundromat/Cosmos Laundromat.mp4". Reason: "Cosmos Laundromat file_open (/data/downloads
+--3141e68352d2c61e2cbb753b050b8207586b2e53039c7daf4003af38572c--/Cosmos Laundromat/Cosmos Laundromat.mp4) error: Permission denied"
+(N) 2026-10-17T21:09:02 - Torrent removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:09:02 - Torrent content removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:09:05 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:09:05 - Added new torrent. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:09:48 - Torrent download finished. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:20:54 - Torrent removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:20:54 - Torrent content removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:20:59 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:20:59 - Added new torrent. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:21:41 - Torrent download finished. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:38:25 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:38:25 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:38:25 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:38:25 - Torrent removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:42:44 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:42:53 - Added new torrent. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:42:56 - Torrent download finished. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:43:02 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:43:02 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:43:02 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:52:16 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T21:52:16 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T21:52:16 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T22:22:17 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-17T22:22:17 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T22:22:17 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-17T22:22:17 - Enqueued torrent move. Torrent: "Cosmos Laundromat". Source: "/data/downloads". Destination: "/tmp/go-qbittorrent-api-test-edited"
+(N) 2026-10-17T22:22:17 - Start moving torrent. Torrent: "Cosmos Laundromat". Destination: "/tmp/go-qbittorrent-api-test-edited"
+(N) 2026-10-17T22:22:17 - Moved torrent successfully. Torrent: "Cosmos Laundromat". Destination: "/tmp/go-qbittorrent-api-test-edited"
+(N) 2026-10-17T22:30:54 - qBittorrent termination initiated
+(N) 2026-10-17T22:30:54 - Saving resume data completed.
+(N) 2026-10-17T22:30:56 - BitTorrent session successfully finished.
+(N) 2026-10-17T22:30:56 - qBittorrent is now ready to exit
+(N) 2026-10-18T10:51:59 - qBittorrent v5.2.3 started. Process ID: 149
+(N) 2026-10-18T10:51:59 - Using config directory: /config/qBittorrent
+(N) 2026-10-18T10:51:59 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-10-18T10:51:59 - Peer ID: "-qB5230-"
+(I) 2026-10-18T10:51:59 - HTTP User-Agent: "qBittorrent/5.2.3"
+(I) 2026-10-18T10:51:59 - Distributed Hash Table (DHT) support: ON
+(I) 2026-10-18T10:51:59 - Local Peer Discovery support: ON
+(I) 2026-10-18T10:51:59 - Peer Exchange (PeX) support: ON
+(I) 2026-10-18T10:51:59 - Anonymous mode: OFF
+(I) 2026-10-18T10:51:59 - Encryption support: ON
+(I) 2026-10-18T10:51:59 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-10-18T10:51:59 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-10-18T10:51:59 - Successfully listening on IP. IP: "172.23.0.3". Port: "TCP/6881"
+(I) 2026-10-18T10:51:59 - Successfully listening on IP. IP: "172.23.0.3". Port: "UTP/6881"
+(I) 2026-10-18T10:51:59 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-10-18T10:51:59 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(N) 2026-10-18T10:51:59 - Restored torrent. Torrent: "Cosmos Laundromat"
+(I) 2026-10-18T10:51:59 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Oct 1 03:36:12 2026.
+(N) 2026-10-18T10:51:59 - Using built-in WebUI.
+(N) 2026-10-18T10:51:59 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-10-18T10:51:59 - WebUI: Now listening on IP: *, port: 8080
+(I) 2026-10-18T10:52:00 - Detected external IP. IP: "185.58.175.239"
+(N) 2026-10-18T10:56:29 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T11:08:48 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T11:08:48 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T11:08:48 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T11:09:06 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T11:09:06 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T11:09:06 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T11:09:38 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T11:09:38 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T11:09:38 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T11:14:46 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T11:14:46 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T11:14:46 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:33:45 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:35:47 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:38:19 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:44:51 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:45:14 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:45:24 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:45:24 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:45:24 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:46:45 - Torrent removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:46:45 - Torrent content removed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:46:51 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:46:51 - Added new torrent. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:47:23 - Torrent download finished. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:47:35 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:47:35 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:47:35 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:47:35 - Enqueued torrent move. Torrent: "Cosmos Laundromat". Source: "/data/downloads". Destination: "/tmp/go-qbittorrent-api-test-edited"
+(N) 2026-10-18T12:47:35 - Start moving torrent. Torrent: "Cosmos Laundromat". Destination: "/tmp/go-qbittorrent-api-test-edited"
+(N) 2026-10-18T12:47:35 - Moved torrent successfully. Torrent: "Cosmos Laundromat". Destination: "/tmp/go-qbittorrent-api-test-edited"
+(N) 2026-10-18T12:47:40 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:47:40 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:47:40 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:47:40 - Detected an attempt to add a duplicate torrent. Existing torrent: "Cosmos Laundromat". Torrent infohash: c9e15763f722f23e98a29decdfae341b98d53056. Result: Merging of trackers is disabled
+(N) 2026-10-18T12:49:43 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:49:43 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:49:43 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:49:43 - Detected an attempt to add a duplicate torrent. Existing torrent: "Cosmos Laundromat". Torrent infohash: c9e15763f722f23e98a29decdfae341b98d53056. Result: Merging of trackers is disabled
+(N) 2026-10-18T12:59:12 - WebAPI login success. IP: ::ffff:172.23.0.1
+(N) 2026-10-18T12:59:12 - Torrent stopped. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:59:12 - Torrent resumed. Torrent: "Cosmos Laundromat"
+(N) 2026-10-18T12:59:12 - Detected an attempt to add a duplicate torrent. Existing torrent: "Cosmos Laundromat". Torrent infohash: c9e15763f722f23e98a29decdfae341b98d53056. Result: Merging of trackers is disabled
+(N) 2026-10-18T14:29:04 - qBittorrent termination initiated
+(N) 2026-10-18T14:29:04 - Saving resume data completed.
+(N) 2026-10-18T14:29:06 - BitTorrent session successfully finished.
+(N) 2026-10-18T14:29:06 - qBittorrent is now ready to exit
+(N) 2026-10-18T21:27:48 - qBittorrent v5.2.3 started. Process ID: 149
+(N) 2026-10-18T21:27:48 - Using config directory: /config/qBittorrent
+(N) 2026-10-18T21:27:48 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2026-10-18T21:27:48 - Peer ID: "-qB5230-"
+(I) 2026-10-18T21:27:48 - HTTP User-Agent: "qBittorrent/5.2.3"
+(I) 2026-10-18T21:27:48 - Distributed Hash Table (DHT) support: ON
+(I) 2026-10-18T21:27:48 - Local Peer Discovery support: ON
+(I) 2026-10-18T21:27:48 - Peer Exchange (PeX) support: ON
+(I) 2026-10-18T21:27:48 - Anonymous mode: OFF
+(I) 2026-10-18T21:27:48 - Encryption support: ON
+(I) 2026-10-18T21:27:48 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2026-10-18T21:27:48 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2026-10-18T21:27:48 - Successfully listening on IP. IP: "172.23.0.3". Port: "TCP/6881"
+(I) 2026-10-18T21:27:48 - Successfully listening on IP. IP: "172.23.0.3". Port: "UTP/6881"
+(I) 2026-10-18T21:27:48 - Successfully listening on IP. IP: "::1". Port: "TCP/6881"
+(I) 2026-10-18T21:27:48 - Successfully listening on IP. IP: "::1". Port: "UTP/6881"
+(N) 2026-10-18T21:27:48 - Restored torrent. Torrent: "Cosmos Laundromat"
+(I) 2026-10-18T21:27:48 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Thu Oct 1 03:36:12 2026.
+(N) 2026-10-18T21:27:48 - Using built-in WebUI.
+(N) 2026-10-18T21:27:48 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2026-10-18T21:27:48 - WebUI: Now listening on IP: *, port: 8080
+(I) 2026-10-18T21:27:48 - Detected external IP. IP: "185.58.175.239"

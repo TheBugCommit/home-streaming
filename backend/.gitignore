@@ -1,5 +1,5 @@
 # Runtime state / local config
-docker/jellyfin/config/
+../docker/jellyfin/config/
 docker/jellyfin/cache/
 docker/qbittorrent/config/
 postgres/data/

@@ -1,0 +1,34 @@
+{
+    "MiPOlla": {
+        "download_path": null,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "/tmp/go-qbittorrent-api-test-edited",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
+    },
+    "films": {
+        "download_path": null,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
+    },
+    "go-qbittorrent-api-test": {
+        "download_path": null,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "/tmp/go-qbittorrent-api-test-edited",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
+    },
+    "series": {
+        "download_path": null,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
+    }
+}

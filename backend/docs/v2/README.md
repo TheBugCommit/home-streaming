@@ -1,7 +1,7 @@
 # home-streaming v2 — redisseny
 
 Aquest dossier descriu el **redisseny** complet del projecte. Substitueix la documentació de
-`docs/` (v1), que es conserva només com a referència històrica.
+`..` (v1), que es conserva només com a referència històrica.
 
 ## Objectiu
 

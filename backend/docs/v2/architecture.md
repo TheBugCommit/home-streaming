@@ -2,7 +2,7 @@
 
 ## Un sol backend Go
 
-Tota la lògica del servidor viu en un únic mòdul Go, `backend/`, que compila a un sol binari. No hi
+Tota la lògica del servidor viu en un únic mòdul Go, `../..`, que compila a un sol binari. No hi
 ha microserveis ni comunicació per xarxa entre components interns: tot són crides a funcions dins
 del mateix procés.
 
@@ -37,13 +37,13 @@ No hi ha ORM pesant: l'esquema és explícit i les consultes són visibles.
 
 ### Configuració i injecció de dependències
 
-- **Configuració** (`internal/config`): totes les variables d'entorn es llegeixen **una sola vegada**
+- **Configuració** (`../../internal`): totes les variables d'entorn es llegeixen **una sola vegada**
   i es validen a l'arrencada, retornant una estructura tipada (`config.Config`). Cap altre paquet
   crida `os.Getenv`. Els errors es recullen tots junts i el procés falla ràpid si en falta cap o n'hi
-  ha de mal formats. `.env` es carrega amb `godotenv` només com a comoditat de desenvolupament (no
+  ha de mal formats. `../../.env` es carrega amb `godotenv` només com a comoditat de desenvolupament (no
   sobreescriu variables ja definides, així que l'entorn del contenidor sempre mana).
 - **Injecció de dependències** sense *framework*: cada component depèn de les seves **interfícies**
-  (ports) i les rep per constructor. El *composition root* és `internal/app` (`app.New`): l'únic lloc
+  (ports) i les rep per constructor. El *composition root* és `../../internal` (`app.New`): l'únic lloc
   que coneix les implementacions concretes i les connecta. `main` només carrega la config, munta el
   logger, captura senyals i crida `app.Run`.
 - Això manté les dependències apuntant cap endins, fa els paquets provables (es pot injectar un

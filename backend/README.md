@@ -32,7 +32,7 @@ NestJS/Go/Python, NATS, frontend antic) s'ha eliminat.
 
 1. Copiar `.env.example` a `.env` i omplir els secrets, `TMDB_API_KEY` i `JELLYFIN_API_KEY`.
 2. `docker compose up -d`.
-3. Seed del password de qBittorrent amb `scripts/seed-qbittorrent-password.py` (amb el contenidor
+3. Seed del password de qBittorrent amb `scripts` (amb el contenidor
    **aturat**):
    ```
    docker compose stop qbittorrent

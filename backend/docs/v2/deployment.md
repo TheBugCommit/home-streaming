@@ -78,13 +78,13 @@ fallback a CPU.
 
 ## Desplegament local
 
-1. Copiar `.env.example` a `.env` i omplir secrets i `TMDB_API_KEY` / `JELLYFIN_API_KEY`.
+1. Copiar `../../.env.example` a `../../.env` i omplir secrets i `TMDB_API_KEY` / `JELLYFIN_API_KEY`.
 2. `docker compose up -d`. El backend aplica les migracions i *seedegen* els perfils de
    transcodificació per defecte.
 3. Seed del password de qBittorrent (com a v1): aturar el contenidor, escriure la configuració,
    tornar-lo a arrencar.
 4. A Jellyfin: apuntar les llibreries de Movies/TV a `library/movies` i `library/tv`, generar l'API
-   key i omplir `JELLYFIN_*` a `.env`.
+   key i omplir `JELLYFIN_*` a `../../.env`.
 5. Reiniciar el backend perquè reculli les variables noves.
 
 ## Pla de migració des de v1
