@@ -1,0 +1,6 @@
+github.com/TheBugCommit/go-qbittorrent-api v0.1.0 h1:KrL4ktE46jxjbSSCx3Ni6rc0+skdc/pcLIoNMrTy18E=
+github.com/TheBugCommit/go-qbittorrent-api v0.1.0/go.mod h1:XJRJhp/oaXpLOU1iUIfDZzo4T/hkylHSy8x8Q8f4x/E=
+github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
+github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
+golang.org/x/net v0.61.0 h1:RR+6j/BTBCrggOLugxa+66R8FvoN6MHlzDlZIbN9YFw=
+golang.org/x/net v0.61.0/go.mod h1:WgDCOTH8iwtB66T4/GfI94AHo/hhdb7Hah9NDseQfiI=

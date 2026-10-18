@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f74dc4cb-2f28-452d-8078-5fe87fd146d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cmd/worker/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/v2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/v2/api.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/v2/architecture.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/v2/data-model.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/v2/deployment.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/v2/metadata.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/v2/pipeline.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/v2/transcoding.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/app/app.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/qbittorrent/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.gpu.local.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/architecture.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/core-api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/events.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/metadata-service.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/operations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/torrent-worker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/transcode-worker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/provisioning/datasources/loki.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/install-loki-docker-driver.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/seed-qbittorrent-password.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/seed-qbittorrent-password.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/smoke-test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/nest-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/prisma/migrations/20260729200007_init/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/prisma/migrations/migration_lock.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/prisma/schema.prisma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/api-keys/manage-api-keys.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/categories/manage-category.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/media/apply-metadata.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/media/get-media-detail.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/media/handle-transcode-events.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/media/list-media.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/media/process-media-downloaded.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/media/update-media.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/series/list-series.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/series/upsert-series.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/torrents/submit-torrent.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/users/authenticate-user.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/application/users/bootstrap-admin.use-case.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/config/configuration.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/auth/api-key.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/auth/refresh-token.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/categories/category.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/events/events.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/media/media-item-repository.port.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/media/media-item.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/series/series.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/torrents/torrent.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/transcode/transcode-job.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/domain/users/user.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/controllers/api-keys.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/controllers/auth.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/controllers/categories.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/controllers/genres.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/controllers/health.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/controllers/internal.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/controllers/media.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/controllers/series.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/controllers/torrents.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/dto/api-key.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/dto/auth.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/dto/category.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/dto/internal.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/dto/media.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/dto/torrent.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/guards/auth-context.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/guards/internal-key.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/guards/jwt-auth.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/guards/read-access.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/http/guards/roles.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/messaging/nats-client.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/messaging/nats.tokens.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/messaging/publishers/nats-event.publisher.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/messaging/subscribers/media-downloaded.subscriber.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/messaging/subscribers/transcode-events.subscriber.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/persistence.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/prisma/prisma.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/prisma/prisma.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/repositories/api-key.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/repositories/genre-category.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/repositories/media-item.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/repositories/refresh-token.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/repositories/series.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/repositories/torrent.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/repositories/transcode-job.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/infrastructure/persistence/repositories/user.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/core-api/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/coreapi_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/enrichment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/events/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/events/publisher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/events/subscriber.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/logging_setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/matching/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/matching/confidence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/parsing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/parsing/audio_tags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/parsing/filename_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/providers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/providers/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/providers/coverart_provider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/providers/musicbrainz_provider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/providers/tmdb_provider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/app/tv_layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/metadata-service/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/cmd/torrent-worker/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/adapters/qbittorrent/auth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/adapters/qbittorrent/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/config/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/domain/torrent.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/events/events.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/httpserver/handlers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/httpserver/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/messaging/nats.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/ports/event_publisher.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/ports/torrent_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/service/completion_service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/torrent-worker/internal/service/enqueue_service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/cmd/transcode-worker/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/internal/adapters/jellyfin/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/internal/adapters/tdarr/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/internal/config/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/internal/correlation/poller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/internal/domain/transcodejob.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/internal/messaging/nats.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/internal/ports/event_publisher.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/internal/ports/jellyfin_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/transcode-worker/internal/ports/tdarr_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/events/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/events/schemas/media.downloaded.v1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/events/schemas/media.metadata_enriched.v1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/events/schemas/media.transcode_pending.v1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/events/schemas/media.transcode_status_changed.v1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/events/schemas/media.transcoded.v1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/events/schemas/torrent.enqueue.v1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdarr/configs/Last_Run_Tdarr_Node.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdarr/configs/Last_Run_Tdarr_Server.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdarr/configs/Tdarr_Node_Config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdarr/configs/Tdarr_Server_Config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdarr/flows/README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///usr/lib/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.3746325951641434" />
+      <entry key="MS500" value="2.429783303833682" />
+      <entry key="S2" value="4.112418921117495" />
+      <entry key="S5" value="6.485285352176519" />
+      <entry key="S10" value="8.340309127320168" />
+      <entry key="S30" value="11.200781633340974" />
+      <entry key="S60" value="13.942758687890487" />
+      <entry key="M2" value="19.153496353614596" />
+      <entry key="M5" value="37.56097283038277" />
+      <entry key="M10" value="59.457382362385324" />
+      <entry key="M15" value="71.63859639611167" />
+      <entry key="M30" value="87.70616021425415" />
+      <entry key="H1" value="97.5991540419805" />
+      <entry key="H2" value="103.09677149226816" />
+      <entry key="H4" value="105.99577179095905" />
+      <entry key="D1" value="108.49181944692677" />
+      <entry key="W1" value="108.92721745889746" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="8.38822008746122E-134" />
+      <entry key="MS500" value="2.4251240768993745E-27" />
+      <entry key="S2" value="2.2191338288634535E-7" />
+      <entry key="S5" value="0.0021818617080528505" />
+      <entry key="S10" value="0.04882318548137868" />
+      <entry key="S30" value="0.6261174286481785" />
+      <entry key="S60" value="1.5822291998992324" />
+      <entry key="M2" value="3.0858509992434975" />
+      <entry key="M5" value="6.600324210636788" />
+      <entry key="M10" value="9.821778604137196" />
+      <entry key="M15" value="11.44111677617273" />
+      <entry key="M30" value="13.463026604064707" />
+      <entry key="H1" value="14.65891959614563" />
+      <entry key="H2" value="15.310166270309763" />
+      <entry key="H4" value="15.650108445378823" />
+      <entry key="D1" value="15.940980569742376" />
+      <entry key="W1" value="15.991551232379916" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.1951056078085764" />
+      <entry key="MS500" value="2.3868847765084693" />
+      <entry key="S2" value="4.098216115350475" />
+      <entry key="S5" value="6.463814583240246" />
+      <entry key="S10" value="8.346878124525736" />
+      <entry key="S30" value="11.776981170056843" />
+      <entry key="S60" value="15.48030656231096" />
+      <entry key="M2" value="22.19254242179171" />
+      <entry key="M5" value="44.107661913164556" />
+      <entry key="M10" value="69.2350732254258" />
+      <entry key="M15" value="83.04450610879974" />
+      <entry key="M30" value="101.14795758716402" />
+      <entry key="H1" value="112.24638908871127" />
+      <entry key="H2" value="118.40080458534655" />
+      <entry key="H4" value="121.64273778611484" />
+      <entry key="D1" value="124.43226546216712" />
+      <entry key="W1" value="124.91869205786892" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3KW88s2obIE5kPQ19jrTPNbLpam" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Go Build.go build home-streaming.executor": "Debug",
+    "Go Build.go build home-streaming/cmd/worker.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/penguin/dev/home-streaming",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/penguin/dev/home-streaming/main.go"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build home-streaming/cmd/worker">
+    <configuration name="go build home-streaming" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="home-streaming" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="home-streaming" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build home-streaming/cmd/worker" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="home-streaming" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="home-streaming/cmd/worker" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/cmd/worker" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-63c95d513abe-08e7ff217c2b-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-262.10968.67" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-GO-262.10968.67" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f74dc4cb-2f28-452d-8078-5fe87fd146d4" name="Changes" comment="" />
+      <created>1791661808192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1791661808192</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoModernizerVersionTracker">
+    <upgrades>
+      <map>
+        <entry key="$PROJECT_DIR$/go.mod">
+          <value>
+            <VersionUpgradeInfo>
+              <version>1.27</version>
+              <timestamp>1791661883329</timestamp>
+            </VersionUpgradeInfo>
+          </value>
+        </entry>
+      </map>
+    </upgrades>
+  </component>
+</project>

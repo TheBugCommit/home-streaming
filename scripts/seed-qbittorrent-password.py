@@ -4,7 +4,7 @@
 The qBittorrent image (lscr.io/linuxserver/qbittorrent) has no environment variable to set the
 WebUI password — it only generates a random temporary one on first boot ("temporary password
 provided for this session", printed to container logs) and expects you to change it by hand via
-the WebUI. That breaks torrent-worker's automated bootstrap, which needs to log in with
+the WebUI. That breaks the backend's automated bootstrap, which needs to log in with
 QBITTORRENT_USERNAME/QBITTORRENT_PASSWORD from .env non-interactively.
 
 qBittorrent stores its permanent WebUI credentials in qBittorrent.conf as a PBKDF2-SHA512 hash

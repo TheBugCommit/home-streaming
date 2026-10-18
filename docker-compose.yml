@@ -1,8 +1,8 @@
-x-loki-logging: &loki-logging
-  driver: loki
-  options:
-    loki-url: "http://localhost:3100/loki/api/v1/push"
-    loki-external-labels: "service={{.Name}}"
+name: home-streaming
+
+# v2 redesign: a single Go backend and a new frontend replace the v1 microservices. The `backend`
+# and `frontend` services are added during the v2 scaffold; this file currently brings up the
+# infrastructure the backend depends on. See docs/v2/README.md.
 
 services:
   jellyfin:
@@ -15,44 +15,21 @@ services:
       - "7359:7359/udp"
       - "1900:1900/udp"
     volumes:
-      - ./jellyfin/config:/config
-      - ./jellyfin/cache:/cache
-      - ${VIDEOS_PATH}/streamable:/media:ro
+      - ./docker/jellyfin/config:/config
+      - ./docker/jellyfin/cache:/cache
+      # Jellyfin's only mount: the final, identified files. Read-only, so it can never touch the
+      # library, and never sees staging/ or downloads/.
+      - ${MEDIA_PATH}/library:/media:ro
     environment:
       - JELLYFIN_PublishedServerUrl=http://localhost:8096
+    # QSV as a safety net for clients that ask for something the file's format can't serve directly.
+    # The node is mapped under the SAME path it has on the host: libdrm resolves the device from its
+    # minor number, so renaming it (e.g. renderD129 -> renderD128) breaks libva.
+    devices:
+      - ${RENDER_DEVICE:-/dev/dri/renderD128}:${RENDER_DEVICE:-/dev/dri/renderD128}
+    group_add:
+      - "${RENDER_GID:-989}"
     restart: unless-stopped
-    logging: *loki-logging
-
-  tdarr:
-    image: ghcr.io/haveagitgat/tdarr:latest
-    container_name: tdarr
-    ports:
-      - "8265:8265"
-      - "8266:8266"
-    volumes:
-      - ./tdarr/server:/app/server
-      - ./tdarr/configs:/app/configs
-      - ./tdarr/logs:/app/logs
-      - ${VIDEOS_PATH}/library:/data/library
-      - ${VIDEOS_PATH}/streamable:/data/streamable
-      - /tmp/tdarr-temp:/temp
-    environment:
-      - TZ=${TZ}
-      - PUID=1000
-      - PGID=1000
-      - serverIP=0.0.0.0
-      - serverPort=8266
-      - webUIPort=8265
-      - internalNode=true
-      - inContainer=true
-      - ffmpegVersion=6
-      - nodeName=InternalNode
-    restart: unless-stopped
-    logging: *loki-logging
-    # NOTE: production (dedicated server) has no GPU — this entry is CPU-only (libx264) by design.
-    # For faster local iteration on a machine that does have an NVIDIA GPU, use:
-    #   docker compose -f docker-compose.yml -f docker-compose.gpu.local.yml up
-    # Never add `runtime: nvidia` here in the base file.
 
   postgres:
     image: postgres:16-alpine
@@ -69,16 +46,8 @@ services:
       timeout: 5s
       retries: 10
     restart: unless-stopped
-    logging: *loki-logging
-
-  nats:
-    image: nats:2-alpine
-    container_name: nats
-    command: ["-js", "-sd", "/data"]
-    volumes:
-      - ./nats/data:/data
-    restart: unless-stopped
-    logging: *loki-logging
+    ports:
+      - "5432:5432"
 
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:latest
@@ -93,112 +62,14 @@ services:
       - "6881:6881"
       - "6881:6881/udp"
     volumes:
-      - ./qbittorrent/config:/config
-      - ${VIDEOS_PATH}/incoming:/data/incoming
-      - ${VIDEOS_PATH}/library:/data/library
-    restart: unless-stopped
-    logging: *loki-logging
-
-  core-api:
-    build: ./services/core-api
-    container_name: core-api
-    ports:
-      - "${CORE_API_PORT}:3000"
-    environment:
-      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
-      - NATS_URL=${NATS_URL}
-      - JWT_ACCESS_SECRET=${JWT_ACCESS_SECRET}
-      - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET}
-      - INTERNAL_API_KEY=${INTERNAL_API_KEY}
-      - ADMIN_EMAIL=${ADMIN_EMAIL}
-      - ADMIN_INITIAL_PASSWORD=${ADMIN_INITIAL_PASSWORD}
-      - JELLYFIN_URL=${JELLYFIN_URL}
-      - JELLYFIN_API_KEY=${JELLYFIN_API_KEY}
-    depends_on:
-      postgres:
-        condition: service_healthy
-      nats:
-        condition: service_started
-    restart: unless-stopped
-    logging: *loki-logging
-
-  torrent-worker:
-    build: ./services/torrent-worker
-    container_name: torrent-worker
-    environment:
-      - NATS_URL=${NATS_URL}
-      - QBITTORRENT_URL=http://qbittorrent:${QBITTORRENT_WEBUI_PORT}
-      - QBITTORRENT_USERNAME=${QBITTORRENT_USERNAME}
-      - QBITTORRENT_PASSWORD=${QBITTORRENT_PASSWORD}
-    depends_on:
-      - qbittorrent
-      - nats
-    restart: unless-stopped
-    logging: *loki-logging
-
-  transcode-worker:
-    build: ./services/transcode-worker
-    container_name: transcode-worker
-    environment:
-      - NATS_URL=${NATS_URL}
-      - TDARR_SERVER_URL=${TDARR_SERVER_URL}
-      - TDARR_MOVIES_LIBRARY_ID=${TDARR_MOVIES_LIBRARY_ID}
-      - TDARR_TV_LIBRARY_ID=${TDARR_TV_LIBRARY_ID}
-      - TDARR_MUSIC_LIBRARY_ID=${TDARR_MUSIC_LIBRARY_ID}
-      - JELLYFIN_URL=${JELLYFIN_URL}
-      - JELLYFIN_API_KEY=${JELLYFIN_API_KEY}
-      - JELLYFIN_MOVIES_LIBRARY_ID=${JELLYFIN_MOVIES_LIBRARY_ID}
-      - JELLYFIN_TV_LIBRARY_ID=${JELLYFIN_TV_LIBRARY_ID}
-      - JELLYFIN_MUSIC_LIBRARY_ID=${JELLYFIN_MUSIC_LIBRARY_ID}
-    depends_on:
-      - tdarr
-      - nats
-      - jellyfin
-    restart: unless-stopped
-    logging: *loki-logging
-
-  metadata-service:
-    build: ./services/metadata-service
-    container_name: metadata-service
-    environment:
-      - NATS_URL=${NATS_URL}
-      - CORE_API_INTERNAL_URL=http://core-api:3000
-      - INTERNAL_API_KEY=${INTERNAL_API_KEY}
-      - TMDB_API_KEY=${TMDB_API_KEY}
-      - MUSICBRAINZ_CONTACT=${MUSICBRAINZ_CONTACT}
-    volumes:
-      # Scoped write access, only this service renames/moves TV episodes into Jellyfin's naming
-      # convention once the real series/season/episode identity is known (see shared/events/README.md).
-      - ${VIDEOS_PATH}/streamable/tv:/data/streamable/tv
-    depends_on:
-      - nats
-      - core-api
-    restart: unless-stopped
-    logging: *loki-logging
-
-  loki:
-    image: grafana/loki:latest
-    container_name: loki
-    command: ["-config.file=/etc/loki/local-config.yaml"]
-    ports:
-      - "3100:3100"
-    volumes:
-      - ./loki/data:/loki
+      - ./docker/qbittorrent/config:/config
+      # ONE mount: incomplete/ and the per-category folders live inside it, so qBittorrent's own
+      # "move it into place" step stays a rename(2) within a single mount (atomic) instead of a copy.
+      - ${MEDIA_PATH}/downloads:/data/downloads
     restart: unless-stopped
 
-  grafana:
-    image: grafana/grafana:latest
-    container_name: grafana
-    ports:
-      - "3001:3000"
-    environment:
-      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD}
-    volumes:
-      - ./grafana/data:/var/lib/grafana
-      - ./grafana/provisioning:/etc/grafana/provisioning
-    depends_on:
-      - loki
-    restart: unless-stopped
+  # backend:   # added during the v2 scaffold (Go monolith, ffmpeg+QSV, MEDIA_PATH mount)
+  # frontend:  # added during the v2 scaffold (new SPA served by nginx)
 
 volumes:
   pgdata:

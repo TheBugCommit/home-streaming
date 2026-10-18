@@ -1,23 +1,13 @@
-jellyfin/config/
-jellyfin/cache/
-tdarr/server/
-tdarr/logs/
-.env
-/tmp/tdarr-temp/
-
-# new infra state (Phase 1)
-qbittorrent/config/
-nats/data/
+# Runtime state / local config
+docker/jellyfin/config/
+docker/jellyfin/cache/
+docker/qbittorrent/config/
 postgres/data/
-grafana/data/
-loki/data/
+.env
 
-# per-service build artifacts
-services/*/node_modules/
-services/*/dist/
-services/core-api/generated/
-services/*/*.egg-info/
-services/*/__pycache__/
-services/*/.venv/
-services/torrent-worker/torrent-worker
-services/transcode-worker/transcode-worker
+# Build artifacts
+/worker
+/bin/
+/backend/bin/
+frontend/node_modules/
+frontend/dist/
