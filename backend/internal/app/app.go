@@ -2,8 +2,8 @@ package app
 
 import (
 	"context"
-	"home-streaming/backend/internal/config"
-	"home-streaming/backend/internal/qbittorrent"
+	"home-streaming-backend/internal/config"
+	"home-streaming-backend/internal/qbittorrent"
 	"log/slog"
 )
 
@@ -24,8 +24,8 @@ type App struct {
 // New builds the whole dependency graph. It performs no blocking I/O; Run does the work.
 func New(cfg *config.Config, logger *slog.Logger) (*App, error) {
 	torrents, err := qbittorrent.New(qbittorrent.Options{
-		URL:      cfg.Qbittorrent.URL,
-		APIKey:   cfg.Qbittorrent.APIKey,
+		URL:    cfg.Qbittorrent.URL,
+		APIKey: cfg.Qbittorrent.APIKey,
 	}, logger)
 
 	if err != nil {

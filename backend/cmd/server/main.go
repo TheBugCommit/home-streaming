@@ -31,20 +31,16 @@ func run() error {
 		return err
 	}
 
-	logger := newLogger(cfg)
-	slog.SetDefault(logger)
-
 	// Cancel the context on Ctrl-C / SIGTERM, and hand it to every component so they can shut down
 	// gracefully.
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()
 
-	newApp, err := app.New(cfg, logger)
+	appInstance, err := newApp(cfg)
 	if err != nil {
 		return err
 	}
-
-	return newApp.Run(ctx)
+	return appInstance.Run(ctx)
 }
 
 func newLogger(cfg *config.Config) *slog.Logger {
@@ -56,4 +52,16 @@ func newLogger(cfg *config.Config) *slog.Logger {
 		"service", "worker",
 		"env", cfg.Environment,
 	)
+}
+
+func newApp(cfg *config.Config) (*app.App, error) {
+	logger := newLogger(cfg)
+	slog.SetDefault(logger)
+
+	newApp, err := app.New(cfg, logger)
+	if err != nil {
+		return nil, err
+	}
+
+	return newApp, nil
 }

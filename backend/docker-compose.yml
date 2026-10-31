@@ -1,9 +1,5 @@
 name: home-streaming
 
-# v2 redesign: a single Go backend and a new frontend replace the v1 microservices. The `backend`
-# and `frontend` services are added during the v2 scaffold; this file currently brings up the
-# infrastructure the backend depends on. See docs/v2/README.md.
-
 services:
   jellyfin:
     image: jellyfin/jellyfin:latest
@@ -49,6 +45,25 @@ services:
     ports:
       - "5432:5432"
 
+  go_migrate:
+    image: migrate/migrate:latest
+    container_name: go_migrate
+    volumes:
+      - ./internal/migrations:/migrations:ro
+    command: [ ]
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    entrypoint: [
+      "migrate",
+      "-path", "/migrations",
+      "-database", "postgres://$${POSTGRES_USER}:$${POSTGRES_PASSWORD}@postgres:5432/$${POSTGRES_DB}?sslmode=disable"
+    ]
+
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:latest
     container_name: qbittorrent
@@ -68,8 +83,24 @@ services:
       - ${MEDIA_PATH}/downloads:/data/downloads
     restart: unless-stopped
 
-  # backend:   # added during the v2 scaffold (Go monolith, ffmpeg+QSV, MEDIA_PATH mount)
-  # frontend:  # added during the v2 scaffold (new SPA served by nginx)
+  backend:
+    build:
+      context: .
+      dockerfile: docker/go/Dockerfile
+    ports:
+      - "7070:7070"
+    volumes:
+      - .:/app
+      - ${MEDIA_PATH}:/media
+    devices:
+      - ${RENDER_DEVICE}:${RENDER_DEVICE}
+    env_file:
+      - .env
+    group_add:
+      - "${RENDER_GID}"
+    depends_on:
+      - qbittorrent
+      - postgres
 
 volumes:
   pgdata:
