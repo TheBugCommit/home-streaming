@@ -42,5 +42,6 @@ migrate-force: ## Force to change to specific version
 	docker-compose run --rm go_migrate force $(RUN_ARGS)
 
 migrate-create: ## Creates a new migration
-	 @read -p "Enter migration name: " NAME; \
-	docker-compose run --rm go_migrate create -ext sql -dir /migrations -seq $${NAME}
+	docker-compose run --rm \
+	 		--user $$(id -u):$$(id -g) \
+	 		go_migrate create -ext sql -dir /migrations -seq $(RUN_ARGS)

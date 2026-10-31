@@ -5,30 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f74dc4cb-2f28-452d-8078-5fe87fd146d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/cmd/migrate/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/docker/go/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/cmd/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/cmd/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/internal/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/internal/app/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/BT_backup/c9e15763f722f23e98a29decdfae341b98d53056.fastresume" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/BT_backup/c9e15763f722f23e98a29decdfae341b98d53056.torrent" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/BT_backup/queue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/GeoDB/dbip-country-lite.mmdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/lockfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/logs/qbittorrent.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/qBittorrent-data.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/qBittorrent.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/rss/feeds.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/watched_folders.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/qbittorrent/config/qBittorrent/web_clientdata.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="35143edd-52d6-4701-9318-649bfff8a143" value="" />
+    </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
     <option name="cachedIndexableFilesCount" value="39" />
@@ -45,67 +35,70 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/backend/internal/migrations/000001_media_items.up.sql" root0="SKIP_INSPECTION" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000000004" />
-      <entry key="MS500" value="1.0011108371532946" />
-      <entry key="S2" value="1.2972138461486975" />
-      <entry key="S5" value="1.9303567260674" />
-      <entry key="S10" value="2.3802866692129108" />
-      <entry key="S30" value="4.511814309527153" />
-      <entry key="S60" value="9.858412433679408" />
-      <entry key="M2" value="20.7384373649152" />
-      <entry key="M5" value="49.733665130066065" />
-      <entry key="M10" value="97.00087936492545" />
-      <entry key="M15" value="139.6453139612375" />
-      <entry key="M30" value="241.73684144669065" />
-      <entry key="H1" value="389.2071516451869" />
-      <entry key="H2" value="559.906602611936" />
-      <entry key="H4" value="703.9651573264667" />
-      <entry key="D1" value="875.9536548521501" />
-      <entry key="W1" value="911.8123292631906" />
+      <entry key="MS100" value="1.67895471904736" />
+      <entry key="MS500" value="4.2787875104007655" />
+      <entry key="S2" value="9.674877950281605" />
+      <entry key="S5" value="18.62794514602277" />
+      <entry key="S10" value="27.339717696897285" />
+      <entry key="S30" value="39.31788830458098" />
+      <entry key="S60" value="47.00344154328175" />
+      <entry key="M2" value="55.14711058968241" />
+      <entry key="M5" value="76.46631049404088" />
+      <entry key="M10" value="129.1555997177394" />
+      <entry key="M15" value="183.00133702244486" />
+      <entry key="M30" value="316.8097365236226" />
+      <entry key="H1" value="502.58437805975393" />
+      <entry key="H2" value="714.1544025135616" />
+      <entry key="H4" value="895.2925878537751" />
+      <entry key="D1" value="1116.2009713394987" />
+      <entry key="W1" value="1162.9162826225509" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.049303188718234E-147" />
-      <entry key="S5" value="2.7334166188295986E-59" />
-      <entry key="S10" value="7.4786890842408E-30" />
-      <entry key="S30" value="4.456537738088685E-10" />
-      <entry key="S60" value="4.168703518105997E-5" />
-      <entry key="M2" value="0.012872999800684157" />
-      <entry key="M5" value="0.4025691119186088" />
-      <entry key="M10" value="1.2853081094564178" />
-      <entry key="M15" value="2.0049527377928262" />
-      <entry key="M30" value="4.379876509061183" />
-      <entry key="H1" value="10.19957510520033" />
-      <entry key="H2" value="18.919788003608144" />
-      <entry key="H4" value="27.091844631349264" />
-      <entry key="D1" value="37.40991706353519" />
-      <entry key="W1" value="39.61741561466907" />
+      <entry key="MS500" value="2.2275586872540112E-103" />
+      <entry key="S2" value="2.597888934567961E-26" />
+      <entry key="S5" value="1.000550543242625E-10" />
+      <entry key="S10" value="1.986246320682943E-5" />
+      <entry key="S30" value="0.10834598354690553" />
+      <entry key="S60" value="1.1448016833731782" />
+      <entry key="M2" value="3.9247665942352383" />
+      <entry key="M5" value="8.38744002661752" />
+      <entry key="M10" value="11.028721064087144" />
+      <entry key="M15" value="12.384349462029416" />
+      <entry key="M30" value="15.23309403397975" />
+      <entry key="H1" value="20.940505601732163" />
+      <entry key="H2" value="29.958572721177596" />
+      <entry key="H4" value="38.96302122287161" />
+      <entry key="D1" value="50.91487207913836" />
+      <entry key="W1" value="53.54234480272101" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8950250709279729" />
-      <entry key="MS500" value="0.9791522738040097" />
-      <entry key="S2" value="1.2901585030515297" />
-      <entry key="S5" value="1.926215563005173" />
-      <entry key="S10" value="2.3775854202201936" />
-      <entry key="S30" value="4.505610096916594" />
-      <entry key="S60" value="9.847926704005882" />
-      <entry key="M2" value="20.739517130115875" />
-      <entry key="M5" value="50.125585251544074" />
-      <entry key="M10" value="98.27660351296498" />
-      <entry key="M15" value="141.64127110786353" />
-      <entry key="M30" value="246.1075414457512" />
-      <entry key="H1" value="399.39662582022896" />
-      <entry key="H2" value="578.817359863286" />
-      <entry key="H4" value="731.0506552309585" />
-      <entry key="D1" value="913.362132837008" />
-      <entry key="W1" value="951.4295277006887" />
+      <entry key="MS100" value="1.5417887158070984" />
+      <entry key="MS500" value="4.229335652572359" />
+      <entry key="S2" value="9.651881327043203" />
+      <entry key="S5" value="18.61174069301396" />
+      <entry key="S10" value="27.326144036467472" />
+      <entry key="S30" value="39.41048864639359" />
+      <entry key="S60" value="48.11672383314723" />
+      <entry key="M2" value="59.02640695955188" />
+      <entry key="M5" value="84.81544287973715" />
+      <entry key="M10" value="140.15713149446623" />
+      <entry key="M15" value="195.36381192378892" />
+      <entry key="M30" value="332.0268962768962" />
+      <entry key="H1" value="523.5115563564668" />
+      <entry key="H2" value="744.1021687295624" />
+      <entry key="H4" value="934.2481729577935" />
+      <entry key="D1" value="1167.1141593412733" />
+      <entry key="W1" value="1216.4583729517346" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -116,41 +109,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go Build.go build home-streaming.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Build.go build home-streaming/cmd/worker.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginOnboardingV2&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.analysis.ui.options.defaults&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/penguin/dev/home-streaming&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/penguin/dev/home-streaming/main.go&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMThirdPartyAiProvidersConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build home-streaming.executor": "Debug",
+    "Go Build.go build home-streaming/cmd/worker.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/penguin/dev/home-streaming",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/penguin/dev/home-streaming/main.go",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "to.speed.mode.migration.done": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;go&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "go"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend" />

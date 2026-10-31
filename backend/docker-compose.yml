@@ -49,7 +49,7 @@ services:
     image: migrate/migrate:latest
     container_name: go_migrate
     volumes:
-      - ./internal/migrations:/migrations:ro
+      - ./internal/migrations:/migrations
     command: [ ]
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
